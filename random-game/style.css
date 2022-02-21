@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'VT323';
+    src: url(./assets/fonts/VT323-Regular.ttf);
+    font-weight: normal;
+}
+
+*{
+ padding: 0;
+ margin: 0;
+ border: 0;
+ box-sizing: border-box;
+}
+ 
+html, body {
+    height: 100%;
+    background-color: black;
+    font-family: 'VT323', monospace;
+    color: gray;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    padding: 5px 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.data {
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    /*border: 1px solid gray;*/
+}
+
+.game-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    /*background-color: blueviolet;*/
+    border-bottom: 2px solid gray;
+    font-size: 40px;
+    text-align: center;
+    color: gray;
+}
+
+.game-area {
+
+}
+
+
+.table {
+    border-color: gray;
+    font-size: 30;
+    width: 180px;
+    margin-right: 100px;
+}
+
+.cell {
+    font-size: 28px;
+    text-align: right;
+}
+
+.caption {
+    font-size: 28px;
+    text-align: center;
+}
+
+.points{
+    font-size: 28px;
+    text-align: left;
+}
+
+canvas {
+    /*margin: 20px auto;*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30%;
+    display: block;
+    background-size: 100%;
+    background-image: url(./assets/png/background.png);
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    border-top: 2px solid gray;
+    font-size: 28px;
+    color: gray;
+    /*background-color: blueviolet;*/
+}
+
+.rss{
+    font-size: 36px;
+    line-height: 0px;
+}
