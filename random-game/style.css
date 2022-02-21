@@ -48,9 +48,7 @@ a {
 }
 
 .logo {
-    width: 50px;
     height: 50px;
-    /*border: 1px solid gray;*/
 }
 
 .game-data {
@@ -58,26 +56,64 @@ a {
     align-items: center;
     justify-content: center;
     height: 80px;
-    /*background-color: blueviolet;*/
-    border-bottom: 2px solid gray;
+    border-bottom: 3px solid gray;
     font-size: 40px;
     text-align: center;
     color: gray;
 }
 
 .game-area {
-
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-around;
 }
 
+
+.restart{
+    width: 100px;
+    height: 100px;
+    font-size: 48px;
+    text-align: center;
+    border: 3px solid gray;
+    cursor: pointer;
+}
+
+.restart:active {
+    border: inset;
+}
+
+.game-over {
+    display: flex;
+    position:absolute; 
+    top:120px; 
+    left:120px; 
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 144px;
+    color: black;
+    visibility: hidden;
+}
+
+.game-over.active {
+    visibility: visible;
+}
 
 .table {
     border-color: gray;
     font-size: 30;
     width: 180px;
-    margin-right: 100px;
+    border: 3px solid gray;
+}
+
+td {
+    border: 3px solid gray;
 }
 
 .cell {
+    min-width: 30px;
     font-size: 28px;
     text-align: right;
 }
@@ -92,26 +128,45 @@ a {
     text-align: left;
 }
 
+.canvas-wrap {
+    position: relative;
+    margin: 15px 15px;
+}
+
 canvas {
-    /*margin: 20px auto;*/
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 30%;
     display: block;
     background-size: 100%;
     background-image: url(./assets/png/background.png);
 }
 
+@media (max-width: 1024px) {
+    .canvas-wrap {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 960px) {
+    .canvas-wrap {
+        margin-left: 0;
+    }
+}
+
+
 footer {
     width: 100%;
     height: 60px;
-    border-top: 2px solid gray;
+    border-top: 3px solid gray;
     font-size: 28px;
     color: gray;
-    /*background-color: blueviolet;*/
 }
 
 .rss{
-    font-size: 36px;
-    line-height: 0px;
+    height: 50px;
+    width: 100px;
+}
+
+.icon {
+    height: 50px;
+    width: 100px;
+    fill: gray;
 }
